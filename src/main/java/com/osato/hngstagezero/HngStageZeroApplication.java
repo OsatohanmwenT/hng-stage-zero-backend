@@ -1,16 +1,16 @@
 package com.osato.hngstagezero;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
 public class HngStageZeroApplication {
+	private static final Logger log = LoggerFactory.getLogger(HngStageZeroApplication.class);
 
 	public static void main(String[] args) {
 		SpringApplication.run(HngStageZeroApplication.class, args);
+		log.info("HngStageZeroApplication started");
 	}
-
 }
-
